@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riku Publisher</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1a1a1a; --muted: #555; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #121212; --fg: #e8e8e8; --muted: #aaa; --link: #8ab4f8; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.7 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+  a { color: var(--link); } .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<h1>Riku Publisher</h1>
+<p>A personal command-line tool that uploads the developer’s own finished videos to the developer’s own
+YouTube channels via the YouTube Data API (videos.insert, thumbnails.set, channels.list, videos.list).</p>
+<ul>
+  <li>Users: the developer only (single-owner internal tool; not distributed).</li>
+  <li>Channels: <a href="https://www.youtube.com/@kazoetemita">かぞえてみた</a> and the developer’s personal channel いしりく.</li>
+  <li>What it does: upload a finished video, set title / description / thumbnail / scheduled publish time,
+      declare altered or synthetic content where applicable, and confirm the upload finished.</li>
+  <li>What it does not do: read or store other users’ data, comments, or analytics of other channels.</li>
+</ul>
+<p><a href="privacy.html">Privacy Policy</a> ・ <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> ・ <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+<p class="muted">Contact: <a href="https://github.com/ishiriku/riku-publisher/issues">GitHub Issues</a></p>
+</body>
+</html>
